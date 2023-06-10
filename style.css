@@ -1,0 +1,116 @@
+body{
+     box-sizing: border-box;
+}
+.navbar{
+     background-color: rgb(3, 14, 51);
+     color: white;
+     padding: 5px 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     margin-bottom: 30px;
+}
+
+.cart{
+     background-color: aqua;
+     color: black;
+     width: 45px;
+      height:45px;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     position: relative;
+    display: flex;
+
+}
+
+.cartAmount{
+     background-color: red;
+     color: white;
+     border-radius: 5px;
+     padding: 4px;
+     font-size: 16px;
+     position: absolute;
+     top: -10px;
+     right: -10px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+}
+.card-img{
+     width: 200px;
+}
+.left-side{
+     display: flex;
+     align-items: center;
+     gap: 5px;
+}
+.down{
+     display: flex;
+     justify-content: space-between;
+}
+.card{
+     background-color: antiquewhite;
+     border-radius: 10px;
+     padding: 6px;
+     border: 3px solid burlywood;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     text-transform: capitalize;
+}
+.shop{
+     display: grid;
+     grid-template-columns:repeat(4,1fr);
+     gap: 30px;
+  
+     justify-content: center;
+    
+
+}
+
+.item{
+     border: 2px solid black;
+     border-radius: 5px;
+     text-transform: capitalize;
+     
+}
+
+.details{
+    padding: 10px;
+    line-height: 15px;
+}
+
+.buttons{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+
+}
+
+.price-quantity{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+@media (max-width:1000px) {
+     .shop{
+          grid-template-columns:repeat(2,1fr);   
+     }
+     
+}
+@media (max-width:600px) {
+     .shop{
+          grid-template-columns:repeat(1,1fr);   
+     }
+     
+}
